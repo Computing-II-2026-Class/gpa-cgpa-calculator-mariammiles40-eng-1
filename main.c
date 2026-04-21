@@ -4,7 +4,8 @@ Registration Number: 25/U/BIE/01403/PE
 */
 
 #include <stdio.h>
-
+#include <stdlib.h>  // 
+ 
 int main(void) {
     /* Declare variables here */
 
@@ -63,7 +64,7 @@ int main(void) {
     // Check if input is not an integer
         if (input_result != 1) { //
             printf("Invalid score entered\n");
-            return 1;
+            return 1; //
         
     }
  
@@ -79,7 +80,7 @@ int main(void) {
        // Check if input is not an integer
         if (input_result != 1) { //
             printf("Invalid score entered\n");
-            return 1;
+            return 1; // 
 
         }
    }
