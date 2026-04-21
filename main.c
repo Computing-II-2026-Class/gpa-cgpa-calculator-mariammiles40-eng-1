@@ -55,12 +55,13 @@ int main(void) {
     for (i = 0; i < 8; i++) {
         printf("Enter score for %s: ", sem1_codes[i]);
         scanf("%d", &sem1_scores[i]);
+}
 
     // Check if input is not an integer
         if (input_result != 1) {
             printf("Invalid score entered\n");
             return 1;
-        }
+        
     }
     
     
@@ -69,12 +70,13 @@ int main(void) {
     for (i = 0; i < 8; i++) {
         printf("Enter score for %s: ", sem2_codes[i]);
         scanf("%d", &sem2_scores[i]);
+}
 
        // Check if input is not an integer
         if (input_result != 1) {
             printf("Invalid score entered\n");
             return 1;
-        }
+        
     }
 
 
