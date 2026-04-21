@@ -18,7 +18,7 @@ float gpa_sem1, gpa_sem2, cgpa;
 char *sem1_codes[] = {"TEMB 1101", "TEMB 1102", "TEMB 1103", "TEMB 1104", "TEMB 1105", "TEMB 1106", "TEMB 1107", "TEMB 1108"};
 int sem1_credits[] = {4, 3, 3, 3, 3, 3, 2, 3};
 
-char *sem2_codes[] = {"TEMB 1201", "TEMB 1202", "TEMB 1203", "TEMB 1204", "TEMB 1205", "TEMB 1206", "TEMB1207", "TEMB 1208"};
+char *sem2_codes[] = {"TEMB 1201", "TEMB 1202", "TEMB 1203", "TEMB 1204", "TEMB 1205", "TEMB 1206", "TEMB 1207", "TEMB 1208"};
 int sem2_credits[] = {4, 3, 3, 3, 3, 3, 3, 3};
 
  
@@ -30,7 +30,7 @@ int weighted_points_sem1 = 0, weighted_points_sem2 = 0;
  
  printf("--- Semester I ---\n");
 for (int i = 0; i < 8; i++ ){
- printf("Enter score for %s " sem1_codes[i]);
+ printf("Enter score for %s ", sem1_codes[i]);
 
   if (scanf("%d", &scores_sem1[i]) != 1 || scores_sem1[i] < 0 || scores_sem1[i] > 100) {
             printf("Invalid score entered\n");
@@ -57,7 +57,7 @@ for (int i = 0; i < 8; i++ ){
 
   /* Determine grades and grade points */
 
-void getGradeAndPoint(int score, char *grade, int *point) {
+
     if (score >= 80 && score <= 100) {
         *grade = 'A';
         *point = 5;
@@ -154,3 +154,4 @@ printf("\n========== ACADEMIC REPORT ==========\n\n");
 }
 
     
+ 
