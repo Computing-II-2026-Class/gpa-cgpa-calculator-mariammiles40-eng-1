@@ -23,19 +23,16 @@ int main(void) {
     };
     int sem2_credits[] = {4, 3, 3, 3, 3, 3, 3, 3};
 
-    
     // Arrays to store scores for both semesters
     int sem1_scores[8];
     int sem2_scores[8];
 
-    
     // Arrays to store calculated grades and points
     char sem1_grades[8];
     int sem1_points[8];
     char sem2_grades[8];
     int sem2_points[8];
 
-    
     // Variables for GPA and CGPA calculations
     int sem1_total_credits = 0;
     int sem1_weighted_points = 0;
@@ -43,7 +40,6 @@ int main(void) {
     int sem2_weighted_points = 0;
     float sem1_gpa, sem2_gpa, cgpa;
 
-    
     // Variables for classification
     const char *classification;
     
@@ -51,6 +47,7 @@ int main(void) {
     int i;
 
  
+
     /* Read 16 scores */
 
    // Read Semester I scores
@@ -58,14 +55,26 @@ int main(void) {
     for (i = 0; i < 8; i++) {
         printf("Enter score for %s: ", sem1_codes[i]);
         scanf("%d", &sem1_scores[i]);
-    }
 
+    // Check if input is not an integer
+        if (input_result != 1) {
+            printf("Invalid score entered\n");
+            return 1;
+        }
+    }
+    
     
     // Read Semester II scores
     printf("\n=== SEMESTER II SCORES ===\n");
     for (i = 0; i < 8; i++) {
         printf("Enter score for %s: ", sem2_codes[i]);
         scanf("%d", &sem2_scores[i]);
+
+       // Check if input is not an integer
+        if (input_result != 1) {
+            printf("Invalid score entered\n");
+            return 1;
+        }
     }
 
 
