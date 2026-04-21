@@ -57,7 +57,7 @@ int main(void) {
     printf("=== SEMESTER I SCORES ===\n");
     for (i = 0; i < 8; i++) {
         printf("Enter score for %s: ", sem1_codes[i]);
-        scanf("%d", &sem1_scores[i]); //  
+        input_result = scanf("%d", &sem1_scores[i]); //  
 
 
     // Check if input is not an integer
@@ -73,7 +73,7 @@ int main(void) {
     printf("\n=== SEMESTER II SCORES ===\n");
     for (i = 0; i < 8; i++) {
         printf("Enter score for %s: ", sem2_codes[i]);
-        scanf("%d", &sem2_scores[i]); // 
+        input_result = scanf("%d", &sem2_scores[i]); // 
 
 
        // Check if input is not an integer
